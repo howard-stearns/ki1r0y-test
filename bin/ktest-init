@@ -1,0 +1,15 @@
+#!/bin/sh
+
+SOURCE=$(dirname $(realpath "$0"))
+
+if [ ! -f spec/support/jasmine.json ]; then
+    jasmine init
+fi
+
+if [ ! -f spec/SpecRunner.html ]; then
+    cp $SOURCE/../SpecRunner.html spec
+fi
+
+if [ ! -f spec/puppeteer.js ]; then
+    cp $SOURCE/../puppeteer.js spec
+fi

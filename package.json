@@ -1,0 +1,14 @@
+{
+  "name": "ki1r0y-test",
+  "version": "0.0.1",
+  "description": "Utilities for testing ki1r0y packages",
+  "files": ["puppeteer.js", "SpecRunner.html"],
+  "devDependencies": {
+      "browserify": "^16.2.3",
+      "jasmine": "^3.4.0",
+      "puppeteer": "^1.17.0"
+  },
+  "directories": {"bin": "./bin"},
+  "author": "ki1r0y",
+  "license": "MIT"
+}

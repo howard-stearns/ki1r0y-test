@@ -1,0 +1,3 @@
+#!/bin/sh
+
+ktest-init && browserify spec/spec.js > spec/browser-spec.js && node spec/puppeteer.js
